@@ -1,0 +1,4 @@
+@import "../styles/root.css";
+@import "../styles/small.css" screen and (max-width: 360px);
+@import "../styles/medium.css" screen and (max-width: 768px);
+@import "../styles/large.css" screen and (max-width: 1024px);

@@ -1,0 +1,14 @@
+// create new package-lock.json
+npm install --package-lock
+
+// how to update package.json - https://www.npmjs.com/package/npm-check-updates
+!! MAKE SURE TO PUSH ALL CHANGES !!
+1 - Open cmd as admin and go to project directory
+2* - install ncu - if already installed go to step 3
+npm install -g npm-check-updates 
+3 - check if packages can be updated
+ncu
+4 - if packeges can be updated: updated package.json
+ncu -u
+5 - install packages
+npm install
