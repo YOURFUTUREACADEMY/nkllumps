@@ -2,8 +2,8 @@
     <div class="m-4 w-75 mx-auto">
         <section id="nawBlock">
             <div class="mb-3 row">
-                <label for="name" class="form-label col-4 fw-bold">Naam: </label>
-                <div class="col">
+                <label for="name" class="form-label col-sm-4 fw-bold">Naam: </label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="name" id="name" aria-describedby="name"
                         v-model="sendData.naam" @blur="v$.sendData.naam.$touch">
                     <small v-if="v$.sendData.naam.$error" class="text-danger">Dit is een verplicht veld.</small>
@@ -11,32 +11,32 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="email" class="form-label col-4 fw-bold ">E-mailadres:</label>
-                <div class="col">
+                <label for="email" class="form-label col-sm-4 fw-bold ">E-mailadres:</label>
+                <div class="col-sm-8">
                     <input type="email" class="form-control " name="email" id="email" aria-describedby="email"
                         v-model="sendData.email" @blur="v$.sendData.email.$touch">
                     <small v-if="v$.sendData.email.$error" class="text-danger">Dit is een verplicht veld.</small>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="telefoon" class="form-label col-4 fw-bold">Telefoonnummer: </label>
-                <div class="col">
+                <label for="telefoon" class="form-label col-sm-4 fw-bold">Telefoonnummer: </label>
+                <div class="col-sm-8">
                     <input type="number" class="form-control" name="telefoon" id="telefoon" aria-describedby="number"
                         v-model="sendData.telefoon" @blur="v$.sendData.telefoon.$touch">
                     <small v-if="v$.sendData.telefoon.$error" class="text-danger">Dit is een verplicht veld.</small>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="woonplaats" class="form-label col-4 fw-bold">Woonplaats: </label>
-                <div class="col">
+                <label for="woonplaats" class="form-label col-sm-4 fw-bold">Woonplaats: </label>
+                <div class="col-sm-8">
                     <input type="text" class="form-control" name="woonplaats" id="woonplaats" aria-describedby="name"
                         v-model="sendData.woonplaats" @blur="v$.sendData.woonplaats.$touch">
                     <small v-if="v$.sendData.woonplaats.$error" class="text-danger">Dit is een verplicht veld.</small>
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="sport" class="form-label col-4 fw-bold">Welke sport: </label>
-                <div class="col">
+                <label for="sport" class="form-label col-sm-4 fw-bold">Welke sport: </label>
+                <div class="col-sm-8">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="radio-sb-hb" value="honkbal"
                             id="radioHonkbal" checked v-model="sendData.sport">
@@ -50,8 +50,8 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="radio-rechter" class="form-label col-4 fw-bold">Ik ben een: </label>
-                <div class="col">
+                <label for="radio-rechter" class="form-label col-sm-4 fw-bold">Ik ben een: </label>
+                <div class="col-sm-8">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="radio-rechter" value="Clubscheidsrechter"
                             id="radioClub" v-model="sendData.typeUmpire" checked>
@@ -65,8 +65,8 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="diploma" class="form-label col-4 fw-bold">Behaalde diploma's:</label>
-                <div class="col">
+                <label for="diploma" class="form-label col-sm-4 fw-bold">Behaalde diploma's:</label>
+                <div class="col-sm-8">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="diplomaU1" id="U1" value="U1"
                             v-model="sendData.diploma.U1"
@@ -101,8 +101,8 @@
             </div>
 
             <div class="mb-3 row">
-                <label for="ervaringjaren" class="form-label col-4 fw-bold">Aantal jaren ervaring: </label>
-                <div class="col">
+                <label for="ervaringjaren" class="form-label col-sm-4 fw-bold">Aantal jaren ervaring: </label>
+                <div class="col-sm-8">
                     <input type="number" class="form-control" id="ervaring" aria-describedby="number"
                         name="ervaringjaren" v-model="sendData.ervaring" @blur="v$.sendData.ervaring.$touch">
                     <small v-if="v$.sendData.ervaring.$error" class="text-danger">Dit is een verplicht veld.</small>
@@ -110,8 +110,8 @@
             </div>
             <div class="mb-3 row">
 
-                <label for="beschikbaarheid" class="form-label col-4 fw-bold">Beschikbaarheid:</label>
-                <div class="col">
+                <label for="beschikbaarheid" class="form-label col-sm-4 fw-bold">Beschikbaarheid:</label>
+                <div class="col-sm-8">
                     <div class="form-check">
                         <input class="form-check-input" name="zaterdag" type="checkbox" id="zaterdag" value="zaterdag"
                             true-value="zaterdag" false-value="" v-model="sendData.beschikbaarheid.zaterdag"
@@ -136,8 +136,8 @@
 
             </div>
             <div class="mb-3 row">
-                <label for="opmerking" class="form-label col-4 fw-bold">Opmerkingen:</label>
-                <div class="col">
+                <label for="opmerking" class="form-label col-sm-4 fw-bold">Opmerkingen:</label>
+                <div class="col-sm-8">
                     <textarea class="form-control" name="opmerking" id="opmerking" rows="5"
                         v-model="sendData.opmerking"></textarea>
                 </div>
